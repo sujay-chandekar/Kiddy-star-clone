@@ -1,0 +1,138 @@
+/*Header*/
+.nav {
+    height: 6rem;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        width: auto;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.nav-a {
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.nav-a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff6347;
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.nav-a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ff6347;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+}
+
+.logo img {
+    margin-top: 2.5rem;
+}
+
+.logo img:hover {
+    transform: scale(1.01);
+    transition: 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        height: 4rem;
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
+    .logo {
+        height: 6rem;
+        width: 6rem;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .logo img {
+        margin-top: 1rem;
+    }
+
+    .nav-a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        height: 4rem;
+        width: 4rem;
+        margin: 0;
+    }
+
+    .logo img {
+        margin-top: 0.5rem;
+    }
+
+    .nav-a {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+

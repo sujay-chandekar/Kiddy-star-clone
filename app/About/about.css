@@ -1,0 +1,88 @@
+/* main  */
+.container-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 6rem;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+  }
+  .about-nature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .about-nature img{
+    height:10rem;
+    width:10rem;
+    height: fit-content;
+    padding-right: 1rem;
+  }
+  .about-nature h3{
+    font-size:xx-large;
+    font-weight: 800;
+  }
+  .about-playtime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .about-playtime img{
+    height:10rem;
+    width:10rem;
+    height: fit-content;
+    padding-right: 1rem;
+  }
+  .about-playtime h3{
+    font-size:xx-large;
+    font-weight: 800;
+  }
+  .about-activities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .about-activities img{
+    height:10rem;
+    width:10rem;
+    height: fit-content;
+    padding-right: 1rem;
+  }
+  .about-activities h3{
+    font-size:xx-large;
+    font-weight: 800;
+  }
+
+@media (max-width: 768px) {
+  .container-about {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .about-nature,
+  .about-playtime,
+  .about-activities {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-nature img,
+  .about-playtime img,
+  .about-activities img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-nature-info,
+  .about-playtime-info,
+  .about-activities-info {
+    text-align: center;
+  }
+}

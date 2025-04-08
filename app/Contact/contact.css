@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+.container-contact{
+    margin-top: 8rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+.contact-card-title{
+    font-size: xx-large;
+    font-weight: 800;
+    color:rgb(20, 18, 32)
+}
+.contact-card-social-head{
+    font-size:x-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color:rgb(54, 54, 97);
+}
+.contact-card-social-head + .flex {
+    gap: 1rem; /* Added gap for consistent spacing between icons */
+}
+.contact-card-subhead{
+    font-size: large;
+    font-weight: 500;
+    color: rgb(54, 54, 97);
+    margin-top: 0.5rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-card-con{
+    display: flex;
+}
+.contact-card-icon{
+    margin-right: 0.8rem;
+}
+.contact-card-form{
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.conatct-name{
+    border:0.1rem solid #4f4444;
+    
+}
+.contact-email{
+    border:0.1rem  solid #4f4444;
+}
+.contact-msg{
+    border:0.1rem  solid #4f4444;
+}
+.contact-btn{
+    border:0.1rem  solid #4f4444;
+    background-color: rgb(54, 54, 97);
+    color:white;
+    border-radius: 5rem;
+    height:3rem;
+    width:6rem;
+}
+.contact-btn:hover{
+    background-color: rgb(20, 18, 32);
+    color:white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-contact {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .contact-card-info,
+  .contact-card-form {
+    margin: 0;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
